@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jenkins Docker Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins CI/CD Demo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Jenkins Deployment Successful!</h1>
+    <div class="container">
+        <h1>Jenkins CI/CD Deployment</h1>
 
-    <p>This website was deployed using Jenkins and Docker.</p>
+        <p>
+            This website is automatically deployed using:
+        </p>
 
-    <p>GitHub → Jenkins → Docker → AWS EC2</p>
+        <div class="technologies">
+            <span>GitHub</span>
+            <span>Jenkins</span>
+            <span>Docker</span>
+            <span>AWS EC2</span>
+        </div>
 
-    <h1>Jenkins Automatic Deployment Successful!</h1>
+        <button onclick="showMessage()">
+            Test Deployment
+        </button>
 
-    <p>gigufyierwbntfusydgafmrydgnitfx4u</p>
+        <p id="message"></p>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
